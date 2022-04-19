@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Montserrat:wght@400');
+h1,h2,h3,h4,h5,h6{
+    font-family: "Merriweather", serif;
+}
+p,a{
+    font-family: "Montserrat", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: #ffbf0f;
+    
+}
+.header{
+    padding: 10px 0;
+    color: #fafafa;
+    font-weight: 600;
+}
+.navbar{
+    background-color: #F4B306;
+}
+.navbar-nav .nav-item .nav-link{
+    color: white!important;
+    font-weight: 600;
+}
+.home-content{
+    background: linear-gradient(to left, rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/home-bg.jpg");
+    padding: 10% 0;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+}
+.home-content h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.home-content h4{
+    color: rgb(201, 201, 201);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    
+}
+.reserve_form {
+    background-color: rgb(253, 179, 41);
+    
+    margin-top: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.reserve_form i{
+    color: white;
+    margin: 0 4px;
+    font-size: 20px;
+}
+.reserve_form form input{
+    margin: 1px;
+}
+.reserve_form button{
+    color: white;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius:20px ;
+}
+.home-description,.home-activities{
+    margin-top: 120px;
+    
+}
+
+.home-description .description-title{
+    border-left: 3px solid brown;
+    color: #946d24;   
+    padding-top: 50px;
+    text-align: justify;
+    
+}
+@keyframes entrance{
+    0%{margin-left: -100px; opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+    
+}
+
+.description-icon .icon-block{
+    
+    text-align: center;
+    
+}
+.description-icon{
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 1s ease-in-out;
+}
+.description-icon .icon-block i{
+    padding: 25px;
+    border-radius: 50%;
+    font-size: 32px;
+    margin-bottom: 10px;
+    /* background-color: rgb(50, 255, 50); */
+    /* background-color: deepskyblue; */
+    background: linear-gradient(-50deg,#FFBF0F 50%, brown 50% );
+    color: white;   
+}
+.home-activities{
+    background-color: #ffbf0f;
+    padding: 30px;
+}
+.home-activities h1{
+    color: white;
+    margin-top: 100px;
+    text-align: justify;
+    font-weight: 900;
+}
+.home-activities .card{
+    margin-bottom: 10px;
+    
+}
+.card{
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 1s ease-in-out;
+}
+.home-activities .card p{
+    text-align: center;
+    margin-top: 10px;
+    color: #946D24;
+    border-radius: 10px;
+    font-size: 20px ;
+}
+.testimonials{
+    margin-top: 120px;
+    
+}
+.testimonials .title{
+    border-left: 3px solid brown;
+    padding-top: 50px;
+}
+.testimonials .title small{
+    color: #946D24;
+    margin-bottom: 10px;
+}
+.testimonials .title h1{
+    font-weight: 800;
+    color: #946D24;
+}
+.testimonials .carousel-item{
+    padding-top: 10px;
+    text-align: center;
+}
+.testimonials .carousel-item p:first-child{
+    font-size: 20px;
+}
+.testimonials .carousel-inner{
+    padding: 0 50px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: #946d24;
+}
+.testimonials .carousel-item i{
+ margin-bottom: 10px;
+ padding: 20px;
+ border-radius: 50%;
+ background-color: rgba(165, 42, 42, 0.371);
+ color: white;
+}
+.footer-widgets{
+    background-color: rgb(22, 22, 22);
+    color: rgba(255, 255, 255, 0.679);
+    margin-top: 100px;
+    padding-top: 20px;
+}
+.footer-widgets h5{
+    border-left: 3px solid #946d24;
+    padding-left: 2px;
+}
+.footer-widgets .nav-item .nav-link{
+    color: rgba(255, 255, 255, 0.679);
+}
+.footer{
+    background-color: rgb(11, 11, 11);
+    padding: 10px;
+    text-align: center;
+}
+.footer p{
+    margin: 0;
+    color: #BABABA;
+}
+.animation{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* ABOUT PAGE STYLING */
+.about-title{
+    padding: 20px;
+    text-align: center;
+    background-color: #F4B306;
+}
+.about-title p{
+    color: white;
+}
+.about-title h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+}
+.about-content{
+    /* background-color: #F4B306; */
+    padding: 50px 0;
+    background: linear-gradient(-45deg, brown 60%, #F4B306 40%);
+    /* background: radial-gradient( brown 90%, #F4B306 10%); */
+    /* background-color: brown; */
+    
+}
+.about-content p{
+    text-align: justify;
+    border-left: 3px solid #F4B306;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+}
+.about-content img{
+    border-radius: 20px;
+    box-shadow: 2px 10px 15px 1px black;
+}
+
+

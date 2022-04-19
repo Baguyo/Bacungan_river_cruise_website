@@ -1,0 +1,138 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bacungan River Cruise</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        
+        <div class="header">
+            <div class="container">
+                <div class="header-info">
+                    <i class="fa fa-phone"></i> +63 997 653 6913 &nbsp;
+                    <i class="fa fa-envelope"></i> Sample@gmail.com
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="" class="img-responsive" height="75px">
+                </a>
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+
+        <div class="reserve_form">
+                    
+            <form class="form-inline" action="" method="post" id="form">
+                <div class="form-group">
+                  <label >
+                    <i class="fa fa-envelope"></i>
+                  </label>
+                  <input type="email" class="form-control" placeholder="example@email.com">
+                </div>
+
+                <div class="form-group ">
+                  <label>
+                      <i class="fa fa-phone"></i>
+                  </label>
+                  <input type="number" class="form-control" placeholder="Contact number">
+                </div>
+                
+                <div class="form-group ">
+                    <label>
+                        <i class="fa fa-user"></i>
+                    </label>
+                    <input type="number" class="form-control" placeholder="Number of guest">
+                  </div>
+
+                  <div class="form-group ">
+                    <label>
+                        <i class="fa fa-calendar"></i>
+                    </label>
+                    <input type="date" class="form-control" placeholder="Date of Arrival">
+                  </div>
+
+                  <select id="my-select" class="form-control" name="" id="type_of_service" required onchange="myfunction()">
+                    <option value="River Cruise 500 per pax minimum of 10 - with food">River Cruise 500 per pax minimum of 10 - with food </option>
+                    <option value="River Cruise 200 per pax minimum of 10 - without food " selected>River Cruise 200 per pax minimum of 10 - without food </option>
+                    <option value="Kayaking 150 per hour">Kayaking 150 per hour</option>
+                    <option value="Firefly watching 600 per pax minimum of 10 (floating) minimum of 6 (boat)- with food">Firefly watching 600 per pax minimum of 10 (floating) minimum of 6 (boat)- with food</option>
+                    <option value="Firefly watching 250 per pax minimum of 10 (floating) minimum of 6 (boat)- without food">Firefly watching 250 per pax minimum of 10 (floating) minimum of 6 (boat)- without food</option>
+                </select>
+
+                  <button type="submit" class="btn btn-primary">Make a reservation</button>
+              </form>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+
+        <script>
+            
+             
+                function myfunction(){
+                    var select = document.getElementById("type_of_service");
+                var selectedService = select.options[select.selectedIndex].value;
+                alert(selectedService);
+                }
+                
+                
+            });
+        </script>
+    </body>
+</html> -->
+<form action="" id="demoForm" class="demoForm">
+    <select id="SelectEquipmentDropdown" >
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+    <button type="submit" id="submit">
+        click me
+    </button>
+  </form>
+  <script>
+
+//   function myFunction(){
+//   var e = document.getElementById("SelectEquipmentDropdown");
+//   var selectedEquipmentDropdown = e.options[e.selectedIndex].value;
+  
+
+//   alert(selectedEquipmentDropdown);
+//   }
+  var submit = document.querySelector("#submit");
+  submit.addEventListener('click', function(){
+    var e = document.getElementById("SelectEquipmentDropdown");
+  var selectedEquipmentDropdown = e.options[e.selectedIndex].value;
+      alert(selectedEquipmentDropdown);
+  })
+  </script>
+  
